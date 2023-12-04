@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numero mayor</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <style>
+        body{
+            background-image: url(https://i.pinimg.com/originals/25/bb/0f/25bb0f734d0dfcab4dccabd671decba7.gif);
+            background-size: cover;   
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>• EDAD PARA VOTAR 🔞•</h1>
+    </header>
+    <main>
+        <section class="container">
+            <section class="container">
+                <form action="/index.html">
+            <form action="/index.html">
+             <label for="edad">
+                <input type="number" id="edad" placeholder="ingresa un numero" required min="1" >
+             </label>
+             <div class="botones">
+                 <button type="button" class="boton" onclick="ope.edadpavotar()">Aceptar</button>
+                 <button type="submit" class="boton" >Regresar</button>
+
+             </div>
+             <div id="resp" >
+                aqui va a ir la respuesta:
+             </div>
+          </form>
+ 
+        </section>
+      
+    </main>
+    <footer>
+        <h6>Todos los derechos reservados -grupo sepsi Soft.</h6>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+let bmi = peso/(estatura*estatura) 
+if (bmi < 18.5 ){document.getElementByid("resp").innerHTML = `tu BMI es: ${bmi}, inferior al normal`}
+else if (bmi >= 18.5 && bmi <= 24.9){document.getElementByid("resp").innerHTML = `tu BMI es: ${bmi}, normal`}
+else if (bmi >= 25.0 && bmi <= 30){document.getElementByid("resp").innerHTML = `tu BMI es: ${bmi} , superior al normal`}
+
+
+
+
+
+
+
+if (bmi < 18.5 ){console.log("peso inferior al normal")
+estado = "peso inferior al normal"}
+ if (bmi >= 18.5 && bmi <= 24.9){console.log("peso normal")
+estado = "peso normal"}
+ if (bmi >= 25.0 && bmi <= 30){console.log("peso superior al normal")
+estado = "peso superior al normal"}else {console.log("sobrepeso")
+estado = "sobrepeso"}
+
+document.getElementByid("resp").innerHTML = ` BMI : ${bmi}, ESTADO : ${estado}`

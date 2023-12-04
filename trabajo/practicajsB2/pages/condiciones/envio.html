@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envío con tarifas</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <style>
+        body{
+            background-image: url(https://i.pinimg.com/originals/25/bb/0f/25bb0f734d0dfcab4dccabd671decba7.gif);
+            background-size: cover;   
+        }
+    </style>
+</head>
+   <body>
+    <header>
+        <h1>Ingresar la distancia de envío para el costo del envío</h1>
+    </header>
+    <main>
+        <section class="container">
+            <section class="container">
+                <form action="/index.html">
+            <form action="/index.html">
+                <div>
+                    Menor a 50Km = 10$ <br>
+                    mayor a 50Km = 20$ <br>
+                 </div>
+                 
+             <label for="envioKilometro">
+              <input type="number" id="envioKilometro" value="" placeholder="Ingresa la distancia[no poner Km al final]" >
+             </label>
+             
+                <div class="botones">
+                    <button type="button" class="boton" onclick="ope.envio()">Aceptar</button>
+                    <button type="submit" class="boton">Regresar</button>
+                </div>
+             <div id="resp" >
+                Aquí va a ir la respuesta:
+             </div>
+          </form>
+ 
+        </section>
+      
+    </main>
+    <footer> 
+        <h6>Todos los derechos reservados - grupo sepsi.</h6>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+</html>

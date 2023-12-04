@@ -1,0 +1,237 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif, ;
+  background-image: url(https://giffiles.alphacoders.com/211/211931.gif);
+  background-size: cover;
+  margin :0;
+
+}
+
+/* pro imagen */
+@keyframes neonBorder{
+0% {
+box-shadow: 0  0 10px #01f3df ,0  0 20px #01f3df, 0  0 30px #01f3df;
+}
+50% {
+box-shadow: 0  0 10px #01f3df,0  0 20px #01f3df,0  0 30px #01f3df,0  0 40px #01f3df,0  0 50px #01f3df;
+}
+100% {
+box-shadow: 0  0 10px #01f3df,0  0 20px #01f3df,0  0 30px #01f3df;
+}
+
+}
+
+img{
+width: 600px; 
+height: 158px;
+border-radius: 40px;  
+border: 2px solid #01f3df  ;
+margin-bottom: 20px;
+margin-top: 10px;
+animation:neonBorder 3s infinite alternate;
+}
+
+h1{
+color: rgb(248, 248, 248);
+text-align: center;  
+font-size:  40px;
+}
+h2{
+margin-top:-26px ;
+}
+.menu{
+
+text-align: center;
+
+}
+
+.menu{
+list-style: none;
+font-size: 19px;
+border-radius: 30px;
+padding: 0;
+background: #1b2020 ;
+width: 90%;
+max-width: 1000%;
+margin: auto;
+margin-top: -15px;
+}
+
+
+
+.menu li a {
+
+text-decoration: none;
+color: aliceblue;
+padding: 20px;
+display: block;
+
+}
+
+.menu li {
+display:inline-block;
+text-align: center;
+}
+
+.menu li a:hover{
+
+background : rgb(24, 61, 59);
+}
+
+
+/* ESE ES LAS DECO DE LA BARRITA */
+.submenu {
+max-height: 340px;
+overflow-y:auto ;
+border: 1px solid #333333;
+
+}
+
+/* FIN  DECO DE LA BARRITA */
+
+
+.submenu {
+
+position:absolute;
+background : #333333;
+width: 14.9%;
+visibility: hidden;
+max-height: 0;
+font-size: 15px;
+margin: auto;
+transition: max-height 0.5s ease-in-out , visibily 0s linear 0.5s
+
+}
+
+.submenu li{
+display: block;
+}
+
+
+.submenu li a{
+font-size: 20px; 
+display:list-item ;
+padding: 10px;
+color: rgb(248, 248, 248);
+font-family:Georgia, 'Times New Roman', Times, serif;
+text-align: left;
+margin: auto;
+
+}
+
+.menu li:hover .submenu{
+visibility: visible;
+max-height: 320px;
+transition: max-height 0.5s ease-in-out , visibily 0s linear;
+}
+
+h6 {
+color: rgb(24, 123, 123);
+
+}
+
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 10px rgba(43, 223, 255, 0.5);
+  font-size: 32px;
+  background: #33333381;
+ backdrop-filter: blur(5px);
+}
+
+
+
+
+
+
+.boton {
+  display: inline-block;
+  padding: 7px 20px;
+  background-color: #4b4b4b63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.9s ease-in-out;
+  box-shadow: 0 1px 10px rgba(43, 223, 255, 0.5);
+  
+}
+.boton:hover {
+  background-color: #f822c63b;
+  padding: 10px 20px;
+  box-shadow: 0 1px 10px rgba(255, 43, 255, 0.5);
+}
+
+
+
+
+
+/* estilos para los formularios */
+div {
+   text-align: center;
+   color: #fff;
+   
+}
+input {
+   width: 90%;
+   padding: 15px;
+   font-size: 20px;
+   margin-bottom: 5px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+}
+
+@keyframes neonBorderLow {
+  0% {
+    box-shadow: 0 0 5px #01f3df, 0 0 10px #01f3df, 0 0 15px #01f3df;
+  }
+  50% {
+    box-shadow: 0 0 5px #01f3df, 0 0 10px #01f3df, 0 0 15px #01f3df, 0 0 20px #01f3df, 0 0 25px #01f3df;
+  }
+  100% {
+    box-shadow: 0 0 5px #01f3df, 0 0 10px #01f3df, 0 0 15px #01f3df;
+  }
+}
+
+#resp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+  color: white;
+  background-color: rgb(37, 37, 37);
+  border-radius: 10px;
+  padding: 20px;
+  animation: neonBorderLow 2s infinite alternate;
+}
+.botones{
+   display: flex;
+   justify-content:center;
+   gap: 10px;
+   margin-bottom: 5px;
+  
+}
+
+
+
+
+
+.ocultar{
+visibility: hidden;
+}
+
+/*--------------------------------------------------------------------*/
+#audiobaby {
+  display: none;
+}
